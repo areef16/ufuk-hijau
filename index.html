@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT Ufuk Hijau</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.classList.toggle('dark');
+      html.classList.toggle('light');
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <!-- Header -->
+  <header class="flex justify-between items-center p-4 shadow-md bg-white dark:bg-gray-800 sticky top-0 z-50" data-aos="fade-down">
+    <h1 class="text-xl font-bold">PT Ufuk Hijau</h1>
+    <nav class="space-x-4">
+      <a href="#tentang" class="hover:underline">Tentang</a>
+      <a href="#layanan" class="hover:underline">Layanan</a>
+      <a href="#proyek" class="hover:underline">Proyek</a>
+      <a href="#testimoni" class="hover:underline">Testimoni</a>
+      <a href="#kontak" class="hover:underline">Kontak</a>
+      <button onclick="toggleTheme()">🌞 / 🌚</button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-20 bg-green-100 dark:bg-green-900" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-4">Solusi Energi Terbarukan & Ramah Lingkungan</h2>
+    <p class="mb-6">Bersama PT Ufuk Hijau, wujudkan masa depan yang cerah dan hemat energi.</p>
+    <div class="space-x-4">
+      <a href="#tentang" class="px-4 py-2 bg-green-600 text-white rounded">Pelajari Selengkapnya</a>
+      <a href="#kontak" class="px-4 py-2 border border-green-600 text-green-600 rounded">Hubungi Kami</a>
+    </div>
+  </section>
+
+  <!-- Tentang Kami -->
+  <section id="tentang" class="py-16 px-6" data-aos="fade-up">
+    <h3 class="text-2xl font-bold mb-4">Tentang PT Ufuk Hijau</h3>
+    <p class="mb-4">PT Ufuk Hijau adalah perusahaan yang bergerak di bidang energi terbarukan, khususnya sistem Pembangkit Listrik Tenaga Surya (PLTS), serta penyedia produk dan jasa berbasis lingkungan.</p>
+    <ul class="list-disc ml-6">
+      <li>Ramah Lingkungan</li>
+      <li>Inovatif</li>
+      <li>Berkelanjutan</li>
+      <li>Transparan & Profesional</li>
+    </ul>
+  </section>
+
+  <!-- Layanan Kami -->
+  <section id="layanan" class="py-16 px-6 bg-gray-50 dark:bg-gray-800" data-aos="fade-up">
+    <h3 class="text-2xl font-bold mb-6 text-center">Layanan Kami</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="p-4 bg-white dark:bg-gray-700 rounded shadow" data-aos="zoom-in">🔆 Pemasangan PLTS On-Grid & Off-Grid</div>
+      <div class="p-4 bg-white dark:bg-gray-700 rounded shadow" data-aos="zoom-in">⚡ Pembangunan Sistem Kelistrikan Berbasis Surya</div>
+      <div class="p-4 bg-white dark:bg-gray-700 rounded shadow" data-aos="zoom-in">🧰 Maintenance dan Monitoring</div>
+      <div class="p-4 bg-white dark:bg-gray-700 rounded shadow" data-aos="zoom-in">📊 Audit & Konsultasi Energi</div>
+      <div class="p-4 bg-white dark:bg-gray-700 rounded shadow" data-aos="zoom-in">🛠️ Custom Engineering untuk Kebutuhan Energi Hijau</div>
+    </div>
+  </section>
+
+  <!-- Proyek Kami -->
+  <section id="proyek" class="py-16 px-6" data-aos="fade-up">
+    <h3 class="text-2xl font-bold mb-6 text-center">Proyek Kami</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="rounded overflow-hidden shadow-lg" data-aos="flip-left">
+        <img src="https://via.placeholder.com/400x250?text=Proyek+1" alt="Proyek 1" class="w-full">
+        <div class="p-4">
+          <h4 class="font-semibold">PLTS Sekolah XYZ</h4>
+          <p class="text-sm">Kapasitas 20kWp | Jakarta</p>
+        </div>
+      </div>
+      <div class="rounded overflow-hidden shadow-lg" data-aos="flip-left">
+        <img src="https://via.placeholder.com/400x250?text=Proyek+2" alt="Proyek 2" class="w-full">
+        <div class="p-4">
+          <h4 class="font-semibold">PLTS Industri ABC</h4>
+          <p class="text-sm">Kapasitas 100kWp | Bekasi</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section id="testimoni" class="py-16 px-6 bg-gray-50 dark:bg-gray-800" data-aos="fade-up">
+    <h3 class="text-2xl font-bold mb-6 text-center">Apa Kata Klien Kami</h3>
+    <div class="max-w-2xl mx-auto">
+      <blockquote class="italic text-center">"PT Ufuk Hijau berhasil menurunkan biaya listrik kami hingga 50%!" – Kepala Yayasan XYZ</blockquote>
+    </div>
+  </section>
+
+  <!-- Kontak Kami -->
+  <section id="kontak" class="py-16 px-6" data-aos="fade-up">
+    <h3 class="text-2xl font-bold mb-6 text-center">Hubungi Kami</h3>
+    <form action="https://formsubmit.co/your@email.com" method="POST" class="max-w-xl mx-auto space-y-4">
+      <input type="text" name="name" required placeholder="Nama" class="w-full p-2 border rounded text-black" />
+      <input type="email" name="email" required placeholder="Email" class="w-full p-2 border rounded text-black" />
+      <textarea name="message" required placeholder="Pesan" class="w-full p-2 border rounded text-black"></textarea>
+      <button type="submit" class="px-4 py-2 bg-green-600 text-white rounded">Kirim</button>
+    </form>
+    <div class="text-center mt-6">
+      <p>📍 Jl. Hijau No.88, Jakarta | 📧 info@ufukhijau.co.id | 📱 0812-3456-7890</p>
+    </div>
+    <div class="mt-6 max-w-4xl mx-auto">
+      <iframe class="w-full h-64" frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?q=Jakarta&key=YOUR_GOOGLE_MAPS_API_KEY" allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-white dark:bg-gray-800" data-aos="fade-up">
+    <p class="text-sm">&copy; 2025 PT Ufuk Hijau. All rights reserved.</p>
+  </footer>
+</body>
+</html>
