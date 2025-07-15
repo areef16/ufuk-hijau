@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jenis Sistem PV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="tabs-section">
+    <h2>Jenis Sistem PV yang Kami Layani</h2>
+    <div class="tabs">
+      <button class="tab active" data-target="grid">Grid-Tie (On-Grid)</button>
+      <button class="tab" data-target="offgrid">Mandiri (Off-Grid)</button>
+      <button class="tab" data-target="hybrid">Hybrid</button>
+      <button id="theme-toggle">🌞 / 🌚</button>
+    </div>
+
+    <div class="tab-contents">
+      <div class="tab-content active" id="grid">
+        <h3>On-Grid System</h3>
+        <p>Terhubung ke jaringan PLN; memungkinkan ekspor-impor energi via net metering.</p>
+      </div>
+      <div class="tab-content" id="offgrid">
+        <h3>Off-Grid System</h3>
+        <p>Sistem mandiri tidak terhubung ke PLN. Gunakan baterai sebagai cadangan energi.</p>
+      </div>
+      <div class="tab-content" id="hybrid">
+        <h3>Hybrid System</h3>
+        <p>Kombinasi On-Grid & Off-Grid: bisa menyimpan energi & ekspor ke PLN.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+        const id = tab.getAttribute('data-target');
+        tab.classList.add('active');
+        document.getElementById(id)?.classList.add('active');
+      });
+    });
+
+    document.getElementById('theme-toggle')?.addEventListener('click', () => {
+      const theme = document.documentElement.getAttribute('data-theme');
+      document.documentElement.setAttribute('data-theme', theme === 'dark' ? 'light' : 'dark');
+    });
+  </script>
+</body>
+</html>
